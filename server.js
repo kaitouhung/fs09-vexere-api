@@ -18,8 +18,8 @@ console.log(config)
 
 
 // const stations = require("./routes/api/stations");
-
-mongoose.connect("mongodb://localhost:27017/fs09-vexere", {
+const port = process.env.PORT ||config.port
+mongoose.connect(config.mongoUri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
