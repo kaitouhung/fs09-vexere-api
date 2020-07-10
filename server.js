@@ -51,7 +51,7 @@ app.use("/api/tickets", require("./routes/api/controllers/ticket"))
 
 
 
-const port = process.env.PORT || config.port;
+
 app.listen(port, () => {
     console.log(`App is running on port ${port}`);
 })
